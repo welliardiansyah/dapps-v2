@@ -21,7 +21,7 @@ const styles = {
     cursor: "pointer",
   },
   text: {
-    color: "#21BF96",
+    color: "#218dbf",
   },
   connector: {
     alignItems: "center",
@@ -52,9 +52,9 @@ function Account() {
   if (!isAuthenticated || !account) {
     return (
       <>
-        <div onClick={() => setIsAuthModalVisible(true)}>
-          <p style={styles.text}>Authenticate</p>
-        </div>
+        <Button onClick={() => setIsAuthModalVisible(true)}>
+          <p style={styles.text}>Connect Wallet</p>
+        </Button>
         <Modal
           visible={isAuthModalVisible}
           footer={null}

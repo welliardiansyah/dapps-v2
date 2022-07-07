@@ -17,7 +17,7 @@ export default function AssetSelector({ setAsset, style }) {
         decimals: nativeToken.decimals,
         name: nativeToken.name,
         symbol: nativeToken.symbol,
-        token_address: "0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee",
+        token_address: "0x5d45C69ACa0883Eb9ac0a55718263163C67b9504",
       },
     ];
   }, [assets, nativeBalance, nativeToken]);

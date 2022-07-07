@@ -18,19 +18,28 @@ function MenuItems() {
       }}
       defaultSelectedKeys={[pathname]}
     >
-      <Menu.Item key="/quickstart">
-        <NavLink to="/quickstart">🚀 Quick Start</NavLink>
-      </Menu.Item>
-      <Menu.Item key="/wallet">
-        <NavLink to="/wallet">👛 Wallet</NavLink>
-      </Menu.Item>
+      {/* <Menu.Item key="/wallet">
+        <NavLink to="/wallet">👛 My Wallet</NavLink>
+      </Menu.Item> */}
       <Menu.Item key="/1inch">
-        <NavLink to="/1inch">🏦 Dex</NavLink>
+        <NavLink to="/1inch">Trade</NavLink>
+      </Menu.Item>
+      <Menu.Item key="farm">
+        <NavLink to="/onramp">NeoBit Farm</NavLink>
       </Menu.Item>
       <Menu.Item key="onramp">
-        <NavLink to="/onramp">💵 Fiat</NavLink>
+        <NavLink to="/onramp">NeoBit Pools</NavLink>
       </Menu.Item>
-      <Menu.Item key="/erc20balance">
+      <Menu.Item key="nft">
+        <NavLink to="/onramp">NeoBit NFT</NavLink>
+      </Menu.Item>
+      <Menu.Item key="whitepaper">
+        <NavLink to="/onramp">Whitepaper</NavLink>
+      </Menu.Item>
+      <Menu.Item key="contract">
+        <NavLink to="/onramp">Contract</NavLink>
+      </Menu.Item>
+      {/* <Menu.Item key="/erc20balance">
         <NavLink to="/erc20balance">💰 Balances</NavLink>
       </Menu.Item>
       <Menu.Item key="/erc20transfers">
@@ -41,7 +50,7 @@ function MenuItems() {
       </Menu.Item>
       <Menu.Item key="/contract">
         <NavLink to="/contract">📄 Contract</NavLink>
-      </Menu.Item>
+      </Menu.Item> */}
     </Menu>
   );
 }
